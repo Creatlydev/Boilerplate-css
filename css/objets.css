@@ -1,0 +1,97 @@
+/* 
+ ────────────────────
+      #WRAPPER
+ ────────────────────
+*/
+
+.o-wrapper {
+    width        : 90vw;
+    width        : clamp(16rem, 90vw, 70rem);
+    margin-left  : auto;
+    margin-right : auto;
+    padding-left : var(--pa-md);
+    padding-right: var(--pa-md);
+    position     : relative;
+}
+
+
+
+
+
+/* 
+ ────────────────────
+      #TEXT
+ ────────────────────
+*/
+
+.o-text {
+    line-height: 1.5;
+    text-align : left;
+}
+
+.o-text--sm {
+    font-size  : var(--fz-sm);
+    line-height: 1;
+}
+
+.o-text--md {
+    font-size: var(--fz-md);
+}
+
+.o-text--lg {
+    font-size  : var(--fz-lg);
+    line-height: 1.3;
+}
+
+.o-text--xl {
+    font-size  : var(--fz-xl);
+    line-height: 1.3;
+}
+
+.o-text--2xl {
+    font-size  : var(--fz-2xl);
+    line-height: 1;
+}
+
+.o-text-truncate {
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+    overflow     : hidden;
+} 
+
+
+
+
+
+/* 
+ ────────────────────
+      #SHADOWS
+ ────────────────────
+*/
+
+.o-shadow-sm {
+    box-shadow: 0 .5rem 1rem rgba(var(--slate-400), .15);
+}                
+
+.o-shadow-md {
+    box-shadow: 0 .125rem .25rem rgba(var(--slate-400), .075);
+}
+
+.o-shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(var(--slate-400), .175);
+}
+
+
+/* SOMBRAS GENERICAS EN THEME - DARK */
+
+.t-dark .o-shadow-sm {
+    box-shadow: 0 .5rem 1rem rgba(var(--slate-600), .15);
+}                
+
+.t-dark .o-shadow-md {
+    box-shadow: 0 .125rem .25rem rgba(var(--slate-600), .075);
+}
+
+.t-dark .o-shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(var(--slate-600), .175);
+}

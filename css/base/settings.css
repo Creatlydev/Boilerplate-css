@@ -1,0 +1,221 @@
+/* 
+ ────────────────────
+      #ROOT
+ ────────────────────
+*/
+
+:root {
+
+    /* 
+         [NEUTRALS]
+    ────────────────────
+    */
+
+
+    /* GREY */
+    --grey-100: (210, 10%, 98%);
+    --grey-200: (220, 13%, 91%);
+    --grey-300: (218, 11%, 65%);
+    --grey-400: (215, 14%, 34%);
+    --grey-500: (215, 28%, 17%);
+    --grey-600: (224, 71%, 4%);
+
+    /* SLATE */
+    --slate-100: (210, 60%, 98%);
+    --slate-200: (214, 32%, 91%);
+    --slate-300: (215, 20%, 65%);
+    --slate-400: (215, 19%, 35%);
+    --slate-500: (218, 19%, 18%);
+    --slate-600: (229, 84%, 5%);
+
+
+    /* 
+         [SEMANTIC]
+    ────────────────────
+    */
+
+
+    /* RED (Danger) */
+    --red-100: (0, 86%, 97%);
+    --red-200: (0, 96%, 89%);
+    --red-300: (0, 91%, 71%);
+    --red-400: (0, 72%, 51%);
+    --red-500: (0, 70%, 35%);
+    --red-600: (0, 75%, 15%);
+
+    /* ORANGE (Warning) */
+    --orange-100: (33, 100%, 96%);
+    --orange-200: (32, 98%, 83%);
+    --orange-300: (27, 96%, 61%);
+    --orange-400: (21, 90%, 48%);
+    --orange-500: (15, 79%, 34%);
+    --orange-600: (13, 81%, 15%);
+    
+    /* GREEN (Success) */
+    --green-100: (138, 76%, 97%);
+    --green-200: (141, 79%, 85%);
+    --green-300: (142, 69%, 58%);
+    --green-400: (142, 76%, 36%);
+    --green-500: (143, 64%, 24%);
+    --green-600: (145, 80%, 10%);
+
+    /* BLUE (Info) */
+    --blue-100: (214, 100%, 97%);
+    --blue-200: (213, 97%, 87%);
+    --blue-300: (213, 94%, 68%);
+    --blue-400: (221, 83%, 53%);
+    --blue-500: (226, 71%, 40%);
+    --blue-600: (226, 57%, 21%);
+
+
+    /* 
+         [PALLETS]
+    ────────────────────
+    */
+    
+    /* YELLOW */
+    --yellow-100: (55, 92%, 95%);
+    --yellow-200: (53, 98%, 77%);
+    --yellow-300: (48, 96%, 53%);
+    --yellow-400: (41, 96%, 40%);
+    --yellow-500: (32, 81%, 29%);
+    --yellow-600: (26, 83%, 14%);
+    
+    /* INDIGO */
+    --indigo-100: (226, 100%, 97%);
+    --indigo-200: (228, 96%, 89%);
+    --indigo-300: (234, 89%, 74%);
+    --indigo-400: (243, 75%, 59%);
+    --indigo-500: (244, 55%, 41%);
+    --indigo-600: (244, 47%, 20%);
+    
+    /* PURPLE */
+    --purple-100: (270, 100%, 98%);
+    --purple-200: (269, 100%, 92%);
+    --purple-300: (270, 95%, 75%);
+    --purple-400: (271, 81%, 56%);
+    --purple-500: (273, 67%, 39%);
+    --purple-600: (274, 87%, 21%);
+    
+    /* PINK */
+    --pink-100: (327, 73%, 97%);
+    --pink-200: (326, 85%, 90%);
+    --pink-300: (329, 86%, 70%);
+    --pink-400: (333, 71%, 51%);
+    --pink-500: (336, 74%, 35%);
+    --pink-600: (336, 84%, 17%);
+
+
+    /* 
+         [PADDINGS]
+    ────────────────────
+    */
+
+    --pa-xs: .5rem;
+    --pa-sm: 1rem;
+    --pa-md: 1.5rem;
+    --pa-lg: 2rem;
+    --pa-xl: 2.5rem;
+
+
+    /* 
+         [FONT SIZES]
+    ──────────────────────
+    */
+    --fz-sm: .75rem;
+    --fz-md: .875rem;
+    --fz-lg: 1rem;
+    --fz-xl: 1.25rem;
+    --fz-2xl: 2rem;
+
+
+    --font-mono: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+
+@media screen and (min-width: 960px) {
+    :root {
+        --fz-sm: .875rem;
+        --fz-md: .1rem;
+        --fz-lg: 1.25rem;
+        --fz-xl: 1.5rem;
+        --fz-2xl: 3rem;
+    }
+}
+
+
+
+
+
+/* 
+ ────────────────────
+      #THEMES
+ ────────────────────
+*/
+
+.t-light {
+    --color-primary        : hsl(142, 86%, 58%);
+    --color-primary-dark   : hsl(142, 87%, 48%);
+    --color-primary-light  : hsl(142, 87%, 68%);
+    --color-primary-x-light: hsl(140, 90%, 96%);
+    --color-accent         : hsl(47, 99%, 50%);
+    --color-accent-dark    : hsl(47, 99%, 44%);
+    --color-light          : hsl(var(--slate-100));
+    --color-dark           : hsl(var(--slate-500));
+    --color-stroke         : hsl(var(--slate-200));
+}
+
+.t-dark {
+    --color-primary        : ;
+    --color-primary-dark   : ;
+    --color-primary-light  : ;
+    --color-primary-x-light: ;
+    --color-accent         : ;
+    --color-accent-dark    : ;
+    --color-light          : ;
+    --color-dark           : ;
+    --color-stroke         : ;
+}
+
+
+
+
+
+/* 
+ ────────────────────
+      #GLOBAL STYLES
+ ────────────────────
+*/
+
+body {
+    min-height    : 100vh;
+    font-family   : "Roboto", Arial, Helvetica, sans-serif;
+    background    : var(--color-light);
+    color         : var(--color-dark);
+    line-height   : 1.5;
+    letter-spacing: 0.03ch;
+}
+
+main {
+    flex: auto;
+}
+
+a:not([class]) {
+    color: var(--color-primary);
+}
+
+hr {
+    border    : 0;
+    border-top: 1px solid var(--color-stroke);
+    margin    : 4rem auto;
+}
+
+
+:is(h1, h2, h3) {
+    font-weight: 500;
+    max-width  : 50ch;
+}
+
+:is(p, li, blockquote, dl) {
+    max-width: 65ch;
+}

@@ -1,0 +1,97 @@
+/* 
+ ────────────────────
+      #GENERIC
+ ────────────────────
+*/
+
+.u-flow-space {
+    margin-top: var(--flow-space, 1em);
+}
+
+
+
+
+
+/* 
+ ────────────────────
+      #FLEX
+ ────────────────────
+*/
+
+.u-flex {
+    display: flex;
+}
+
+.u-flex-row {
+    flex-direction: row;
+}
+
+.u-flex-col {
+    flex-direction: column;
+}
+
+.u-items-center {
+    align-items: center;
+}
+
+.u-items-start {
+    align-items: start;
+}
+
+.u-justify-center {
+    justify-content: center;
+}
+
+.u-justify-start {
+    justify-content: start;
+}
+
+.u-justify-between {
+    justify-content: space-between;
+}
+
+
+
+
+
+/* 
+ ────────────────────
+      #POSITION
+ ────────────────────
+*/
+
+.u-relative {
+    position: relative;
+}
+
+.u-absolute {
+    position: absolute;
+}
+
+.u-sticky {
+    position: sticky;
+}
+
+.u-fixed {
+    position: fixed;
+}
+
+.u-top-0 {
+    top: 0;
+}
+
+.u-bottom-0 {
+    bottom: 0;
+}
+
+.u-left-0 {
+    left: 0;
+}
+
+.u-right-0 {
+    right: 0;
+}
+
+.u-inset {
+    inset: 0 ;
+}
