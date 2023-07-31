@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+/*
+
+  Con este reset se resuelve:
+    -> Unificar el uso de Custom Properties
+    -> Problemas de box-model más generales
+    -> Problemas con imagenes, vídeos e iconos svg
+    -> Problemas con tipografías y etiquetas input en formularios
+    -> Unificar la tipografía de todas las etiquetas de una web
+
+*/
+
+/* Opcional */
+/* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+/* Opcional */
+/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation           : none !important;
+        -webkit-animation   : none !important;
+        transition          : none !important;
+        -webkit-transition  : none !important;
+        -moz-transition     : none !important;
+        -ms-transition      : none !important;
+        -o-transition       : none !important;
+    }
+}
+
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+    margin          : 0;
+    padding         : 0;
+    border          : none;
+    box-sizing      : border-box;
+    letter-spacing  : inherit;
+    line-height     : inherit;
+    color           : inherit;
+    font            : inherit;
+}
+
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+    max-width           : 100%;
+    display             : block;
+    -o-object-fit       : cover;
+    object-fit          : cover;
+    -o-object-position  : center center;
+    object-position     : center center;
+}
+
+img {
+    -webkit-user-select  : none;
+    -moz-user-select     : none;
+    user-select          : none
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+    display          : inline-block;
+    text-decoration  : none;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+    list-style-type  : none;
+}
+
+/* Configuramos anclas suaves */
+html {
+    scroll-behavior  : smooth;
+    overflow-x       : hidden;
+}
+
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+    content: none;
+}
+
+/*  */
+a,
+b,
+i, 
+strong, 
+em, 
+small, 
+code {
+    line-height: 0;
+}
+
+strong,
+b {
+    font-weight: bolder;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    vertical-align: baseline;
+    line-height: 0;
+    position: relative;
+}
+
+.sub {
+    bottom: -.25em;
+}
+
+.sup {
+    top: -.5em;
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+    font                : inherit;
+    box-sizing          : border-box;
+    -webkit-hyphens     : auto;
+    -ms-hyphens         : auto;
+    hyphens             : auto;
+    background-color    : transparent;
+    color               : inherit;
+    display             : block;
+    /* opcional */
+    -webkit-appearance  : none;
+    -moz-appearance     : none;
+    appearance          : none;
+}
+
+/* Tipos de input [type] | Atributos de tags */
+[role=button],
+button {
+    cursor: pointer
+}
+
+[hidden] {
+    display: none!important;
+}
+
+[type=search] {
+    -webkit-appearance  : textfield;
+    outline-offset      : -2px;
+    appearance          : textfield;
+}
+
+[type=button],[type=reset],
+[type=submit],button {
+    -webkit-appearance  : button;
+    appearance          : button;
+    background-color    : transparent;
+    background-image    : none
+}
+
+
+/* Estados de [input, select, button, textarea] */
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* Reseteamos las tablas */
+table,
+tr,
+td {
+    border-collapse  : collapse;
+    border-spacing   : 0;
+    text-indent      : 0;
+    border-color     : inherit;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+    width    : 100%;
+    display  : block;
+    fill     : currentColor;
+}
+
+/* Botones de incremento y decremento | elementos de entrada tipo number */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto
+}
+
+/* elementos de decoración de búsqueda y botones de carga de archivos en navegadores basados en WebKit */
+::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+/* Otros */
+:-moz-focusring {
+    outline: auto
+}
+
+:-moz-ui-invalid {
+    box-shadow: none
+}
+
+abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+}
+
+progress,
+span {
+    vertical-align: baseline
+}
+
+summary {
+    display: list-item
+}
